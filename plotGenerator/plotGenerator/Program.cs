@@ -15,21 +15,23 @@ namespace plotGenerator
             string[] keys = new string[46];
             string protagonistSex;
             string secondaryCharacterSex;
+            Random rnd = new Random();
+            int randomNumber = rnd.Next(1, 10000);
 
             Console.WriteLine("          ~~~Welcome to Albert's Story Generator~~~\n");
             Console.WriteLine("INSTRUCTIONS:");
-            Console.WriteLine("             Type out every answer for the following 45 questions!");
+            Console.WriteLine("             Type out every answer for the following 46 questions!");
             Console.WriteLine("             Hit the spacebar to get started.");
             Console.ReadKey();
 
 
-            Console.WriteLine("\n\n\nYour protagonist First Name? ");
+            Console.WriteLine("\n\n\nYour protagonist (main character) First Name? ");
             keys[1] = Console.ReadLine();
 
             Console.WriteLine("\nYour protagonist Last Name? ");
             keys[2] = Console.ReadLine();
 
-            Console.WriteLine("\nWhat Gender is " + keys[1] + " " + keys[2] + "?");
+            Console.WriteLine("\nWhat Gender is " + keys[1] + " " + keys[2] + "?" + " (male, female)");
             protagonistSex = Console.ReadLine();
             protagonistSex = protagonistSex.ToLower();
 
@@ -39,18 +41,14 @@ namespace plotGenerator
             Console.WriteLine("\nYour secondary character Last Name?");
             keys[4] = Console.ReadLine();
 
-            Console.WriteLine("\nWhat Gender is " + keys[3] + " " + keys[4] + "?");
+            Console.WriteLine("\nWhat Gender is " + keys[3] + " " + keys[4] + "?" + " (male, female)");
             secondaryCharacterSex = Console.ReadLine();
             secondaryCharacterSex = secondaryCharacterSex.ToLower();
-
-            //Test toLower
-
-            Console.WriteLine(secondaryCharacterSex + " " + protagonistSex);
 
             Console.WriteLine("\nWhat does the second character want from the protagonist? (e.g. closure, revenge, a hug)");
             keys[5] = Console.ReadLine();
 
-            Console.WriteLine("/nSomething the protagonist would like to say to the second character? (e.g.I love you, I am your father)");
+            Console.WriteLine("\nSomething the protagonist would like to say to the second character? (e.g.I love you, I am your father)");
             keys[6] = Console.ReadLine();
 
             Console.WriteLine("\nThe name of the place where it all happens?");
@@ -164,7 +162,7 @@ namespace plotGenerator
             Console.WriteLine("\nForth adjective to describe physical characteristics? (e.g. big, skinny, ginger)");
             keys[43] = Console.ReadLine();
 
-            Console.WriteLine("And finally, what's your pen name?");
+            Console.WriteLine("\nAnd finally, what's your pen name?");
             keys[44] = Console.ReadLine();
 
 
@@ -174,8 +172,35 @@ namespace plotGenerator
 
             Console.WriteLine("\n" + keys[1] + " " + keys[2] + " had always loved " + keys[9] + " " + keys[7] + " with its raspy, fast " + keys[8] + ". It was a place where " + (protagonistSex == "male" ? "he " : "she ") + "felt " + keys[11] + ".");
 
+            Console.WriteLine("\n" + (protagonistSex == "male" ? "He " : "She ") + " was a " + keys[16] + ", " + keys[17] + ", " + keys[30] + " drinker with " + keys[40] + " " + keys[38] + " and " + keys[41] + " " + keys[39] + ". " + (protagonistSex == "male" ? "His " : "Her ") + "friends saw " + (protagonistSex == "male" ? "him " : "her ") + "as an embarrassed, raw " + keys[27] + ". Once, " + (protagonistSex == "male" ? "he " : "she ") + "had even helped a spotless " + keys[26] + " recover from a flying accident. That's the sort of " + (protagonistSex == "male" ? "man he " : "woman she ") + "was.");
 
+            Console.WriteLine("\n" + keys[1] + " walked over to the window and reflected on " + (protagonistSex == "male" ? "his " : "her ") + keys[10] + " surroundings. The " + keys[34] + " teased like " + keys[23] + " " + keys[35] + ".");
 
+            Console.WriteLine("\n" + "Then " + (protagonistSex == "male" ? "he " : "she ") + "saw something in the distance, or rather someone. It was the figure of " + keys[3] + " " + keys[4] + ". " + keys[3] + " was a " + keys[19] + " " + keys[28] + " with " + keys[43] + " " + keys[38] + " and " + keys[42] + " " + keys[39] + ".");
+
+            Console.WriteLine("\n" + keys[1] + " gulped. " + (protagonistSex == "male" ? "He " : "She ") + "was not prepared for " + keys[3] + ".");
+
+            Console.WriteLine("\n" + "As " + keys[1] + " stepped outside and " + keys[3] + " came closer, " + (protagonistSex == "male" ? "he " : "she ") + "could see the bad smile on " + (secondaryCharacterSex == "male" ? "his " : "her ") + "face.");
+
+            Console.WriteLine("             ~~~Hit the spacebar to continue reading~~~");
+            Console.ReadKey();
+
+            Console.WriteLine("\n" + keys[3] + " gazed with the affection of " + randomNumber + " " + keys[18] + " confused " + keys[37] + ". " + (secondaryCharacterSex == "male" ? "He " : "She ") + "said, in hushed tones, 'I love you and I want " + keys[5] + "'.");
+
+            Console.WriteLine("\n" + keys[1] + " looked back, even more " + keys[14] + " and still fingering the " + keys[15] + " " + keys[31] + "." + "'" + keys[3] + ", " + keys[6] + ",' " + (protagonistSex == "male" ? "he " : "she ") + " replied.");
+
+            Console.WriteLine("\n" + "They looked at each other with " + keys[12] + " feelings, like two envious, tight " + keys[36] + " " + keys[24] + " at a very " + keys[20] + " " + keys[22] + ", which had " + keys[29] + " music playing in the background and two " + keys[21] + " uncles " + keys[25] + " to the beat.");
+
+            Console.WriteLine("\n" + keys[1] + " regarded " + keys[3] + "'s " + keys[43] + " " + keys[38] + " and " + keys[42] + " " + keys[39] + ". 'I feel the same way!' revealed " + keys[1] + " with a delighted grin.");
+
+            Console.WriteLine("\n" + keys[3] + " looked " + keys[13] + ", her emotions blushing like a vast, stormy " + keys[32] + ".");
+
+            Console.WriteLine("\n" + "Then " + keys[3] + " came inside for a nice drink of " + keys[30] + ".");
+
+            Console.WriteLine("\nTHE END");
+
+            Console.ReadKey();
+            Console.ReadKey();
         }
     }
 }

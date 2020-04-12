@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AbraKadabra\\source\\repos\\plotGenerator\\plotGenerator\\plotGenerator.csproj",
+      "projectUniqueName": "C:\\Users\\AbraKadabra\\Dropbox\\GitHub\\C_Sharp\\plotGenerator\\plotGenerator\\plotGenerator.csproj",
       "projectName": "plotGenerator",
-      "projectPath": "C:\\Users\\AbraKadabra\\source\\repos\\plotGenerator\\plotGenerator\\plotGenerator.csproj",
+      "projectPath": "C:\\Users\\AbraKadabra\\Dropbox\\GitHub\\C_Sharp\\plotGenerator\\plotGenerator\\plotGenerator.csproj",
       "packagesPath": "C:\\Users\\AbraKadabra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AbraKadabra\\source\\repos\\plotGenerator\\plotGenerator\\obj\\",
+      "outputPath": "C:\\Users\\AbraKadabra\\Dropbox\\GitHub\\C_Sharp\\plotGenerator\\plotGenerator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\AbraKadabra\\AppData\\Roaming\\NuGet\\NuGet.Config",
