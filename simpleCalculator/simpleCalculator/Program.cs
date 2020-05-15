@@ -108,23 +108,18 @@ namespace simpleCalculator
             }
         }
 
-        static double add(double A, double B)
-        { return A + B; }
+        static double add(double A, double B) => A + B;
+        //{ return A + B; }
 
-        static double subtract(double A, double B)
-        { return A - B; }
+        static double subtract(double A, double B) => A - B;                //Expression-bodied definitions
 
-        static double multiply(double A, double B)
-        { return A * B; }
-                                                               //Arethmetic return functions 
-        static double divide(double A, double B)
-        { return A / B; }
+        static double multiply(double A, double B) => A * B; 
+                                                                            //Arethmetic return functions 
+        static double divide(double A, double B) => A / B; 
 
-        static double pow(double A, double B)
-        { return Math.Pow(A, B); }
+        static double pow(double A, double B) => Math.Pow(A, B); 
 
-        static double sqrt(double A)
-        { return Math.Sqrt(A); }
+        static double sqrt(double A) => Math.Sqrt(A); 
 
     }
 }
