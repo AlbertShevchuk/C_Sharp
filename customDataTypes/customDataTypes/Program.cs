@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BasicClasses
+namespace StaticMembers
 {
     class Program
     {
@@ -17,6 +17,9 @@ namespace BasicClasses
 
             Console.WriteLine(f.Trees);
             Console.WriteLine(f.age);
+			
+			Console.WriteLine();
+			Forest.PrintTreeFacts();
         }
     }
 }
