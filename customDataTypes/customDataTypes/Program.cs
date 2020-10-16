@@ -6,6 +6,8 @@ namespace StaticMembers
     {
         static void Main(string[] args)
         {
+           
+
             Forest f = new Forest("Amazon");
             Console.WriteLine(f.Trees);
 
@@ -20,6 +22,8 @@ namespace StaticMembers
 			
 			Console.WriteLine();
 			Forest.PrintTreeFacts();
+
+           
         }
     }
 }
